@@ -75,7 +75,7 @@ TLDR:"""
         response = co.generate( 
             model='xlarge', 
             prompt = prompt,
-            max_tokens=40, 
+            max_tokens=80, 
             temperature=0.8,
             stop_sequences=["--"])
     
@@ -84,7 +84,7 @@ TLDR:"""
         response = co.generate(  
             model='xlarge',  
             prompt = prompt,  
-            max_tokens=40,  
+            max_tokens=200,  
             temperature=0.6,  
             stop_sequences=["--"])
 

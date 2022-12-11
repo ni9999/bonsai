@@ -1,0 +1,43 @@
+1. cv2: libGL.so importerror 
+try
+sudo apt install libgl1-mesa-glx
+
+
+chatgpt questions:
+capture a photo from client side camera in python django
+
+2. Database problems: no such database 
+see https://docs.djangoproject.com/en/4.1/intro/tutorial02/
+see capture/apps.py there is a captureconfig class 
+don't add capture.apps.captureconfig in installed apps of settings.py 
+only capture is enough
+
+then 
+
+python manage.py makemigrations capture
+
+then
+
+python manage.py sqlmigrate capture 0001(this is the name output by previous command -> 0001_initial.py)
+
+then 
+
+python manage.py migrate
+
+3.
+pip install openai
+npm install openai
+
+4. to use pytessaract (ocr)
+pip install pytesseract
+sudo apt install tesseract-ocr
+
+5. database:  
+name is appname_modelname
+so here is capture_photos
+run 
+python manage.py shell
+from capture.models import Photo
+obj = Photo.objects.all()
+for x in obj:
+    print(x.image)

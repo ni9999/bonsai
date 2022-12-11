@@ -3,10 +3,11 @@
 {% block body %}
 
     <form method="post" action="output">
-        
+
+        <h2>Additional Prompt</h2> 
+        <textarea row = 500 col = 600  type="text" name = "additionalprompt"></textarea>
         <input type="submit" name="summary" value="Summary">
         <input type="submit" name="complete" value="Complete">
-        <textarea row = 300 col = 600  type="text" name = "additionalprompt"></textarea>
 
     </form>
 

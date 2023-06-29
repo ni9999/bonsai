@@ -7,5 +7,10 @@ Simply upload a photo containing text and Bonsai will do the rest. The summary o
 
 # Project in devpost - [Click here](https://devpost.com/software/bonsai-t4md50)
 
+To run locally 
 
+pip install -r requirements.txt
+sudo apt install libgl1-mesa-glx
+
+And then add your url/host to ALLOWED_HOSTS in settings.py
 

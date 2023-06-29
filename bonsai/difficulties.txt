@@ -41,3 +41,12 @@ from capture.models import Photo
 obj = Photo.objects.all()
 for x in obj:
     print(x.image)
+
+
+
+6. to get all dependencies
+pip freeze > requirements.txt
+this will make this text file with all pip package with version name 
+then 
+pip install -r requirements.txt
+will install these packages
